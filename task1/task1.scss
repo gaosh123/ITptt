@@ -1,0 +1,29 @@
+body{
+  margin: 0 auto;
+  max-width: 780px;
+  min-width: 320px;
+}
+.box{
+  background: orange;
+  width: 31%;
+  padding-top: 31%;
+  margin: 1.1%;
+  float: left;
+  border-radius: 10%;
+}
+button {
+  margin-top: 1%;
+  width: 100%;
+  padding: 1rem 0;
+  border-radius: 10px;
+  border: 1px solid orange;
+  font-size: 15px;
+  color: orange;
+  background: white;
+  outline: none;
+  cursor: pointer;
+}
+button:hover{
+  background: orange;
+  color: #fff;
+}
