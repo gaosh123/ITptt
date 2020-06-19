@@ -1,0 +1,45 @@
+body {
+  margin: 280px 0 0 auto;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  background: url("img/FLAMING MOUNTAIN.JPG") no-repeat; }
+  body .record {
+    width: 30%;
+    min-width: 320px;
+    height: 280px;
+    background: #d7d7d7;
+    opacity: 0.6;
+    text-align: center; }
+    body .record h2 {
+      text-align: center;
+      color: #29bde0; }
+    body .record div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 20px;
+      background: #fff;
+      height: 2rem; }
+      body .record div input {
+        width: 80%;
+        outline: none;
+        margin-left: 10px;
+        border: 0;
+        border-left: 1px solid;
+        padding-left: 10px; }
+    body .record img {
+      width: 25px;
+      height: 25px; }
+    body .record button {
+      width: 80%;
+      height: 3rem;
+      background: deepskyblue;
+      border-radius: 10px;
+      text-align: center;
+      cursor: pointer; }
+    body .record p {
+      margin: 0;
+      height: 1.9rem; }
+
+/*# sourceMappingURL=1.css.map */
