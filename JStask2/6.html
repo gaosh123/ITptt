@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>游戏日志</title>
+<style>
+    html {
+        font-size: 62.5%;
+    }
+    html * {
+        padding: 0;
+        margin: 0;
+    }
+    body {
+        background-color: #29bde0;
+    }
+    body header {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background-color: #29bde0;
+    }
+    body header nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    body header nav .header-nav-left {
+        padding: 2rem;
+        background-image: url(img/task7-9.png);
+        background-repeat: no-repeat;
+        background-position: 1rem;
+    }
+    body header nav .header-nav-word {
+        font-size: 1.7rem;
+        font-weight: 700;
+        color: #fff;
+    }
+    body header nav .header-nav-right {
+        cursor: pointer;
+        padding: 2rem;
+        background-image: url(img/task7-4.png);
+        background-repeat: no-repeat;
+        background-position: 1.2rem;
+    }
+    body header .header-in-box {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #b9e9f5;
+    }
+    body header .header-in-box .header-in-word {
+        font-size: 1.3rem;
+        font-weight: 700;
+        padding-left: 2.4rem;
+    }
+    body header .header-in-box .header-in-blank {
+        padding: 1rem;
+    }
+    body header .header-in-box .header-in-picture {
+        padding: 2rem;
+        background-image: url(img/task7-5.png);
+        background-repeat: no-repeat;
+        background-position: 0.6rem;
+        position: relative;
+    }
+    body header .header-in-box .header-in-picture .header-in-music {
+        opacity: 0.0;
+        position: absolute;
+        top: -0.6rem;
+        right: -0.6rem;
+        transform: rotate(180deg);
+    }
+    body header .header-bottom-box .header-bottom-arrow {
+        margin: 0 4rem;
+        width: 0;
+        height: 0;
+        border-left: 0.5rem solid transparent;
+        border-right: 0.5rem solid transparent;
+        border-top: 1rem solid #b9e9f5;
+    }
+    body header .header-bottom-box .header-bottom-word {
+        margin-left: 3.7rem;
+        margin-top: 0.5rem;
+        margin-bottom: 1.1rem;
+        font-size: 1.2rem;
+        color: #fff;
+    }
+    body main {
+        margin-top: 12rem;
+        overflow: hidden;
+        padding-bottom: 12rem;
+    }
+    body main .mainRedBorder {
+        border-color: red;
+    }
+    body main .disabled {
+        pointer-events: none;
+        cursor: default;
+        opacity: 0.6;
+    }
+    body main .main-square-box {
+        width: 24vw;
+        height: 24vw;
+        margin: 3%;
+        text-align: center;
+        float: left;
+        border: 1vw solid #fff;
+        cursor: pointer;
+    }
+    body main .main-square-box .mainRed {
+        background-color: red!important;
+    }
+    body main .main-square-box .main-square-identity {
+        line-height: 17.5vw;
+        font-size: 6vw;
+        font-weight: 700;
+        background-color: #f5c97b;
+    }
+    body main .main-square-box .main-square-number {
+        line-height: 6.5vw;
+        font-weight: 700;
+        font-size: 4vw;
+        color: #fff;
+        background-color: #83b09a;
+    }
+    body main .hoverbox {
+        display: none;
+    }
+    body main .hover2 {
+        width: 4vw;
+        height: 4vw;
+        margin: 0 0.5vw;
+    }
+    body main .main-square-box:hover .hoverbox {
+        display: block;
+        margin: 2vw 0;
+    }
+    body footer {
+        position: fixed;
+        bottom: 0;
+        background-color: #29bde0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 9.5rem;
+    }
+    body footer .footer-choice-jump {
+        display: block;
+        text-align: center;
+        line-height: 4.4rem;
+        width: 80%;
+        text-decoration: none;
+        font-size: 2rem;
+        font-weight: 700;
+        color: #fff;
+        background: #fbb435;
+        cursor: pointer;
+    }
+
+</style>
+</head>
+
+<body>
+<header>
+    <nav>
+        <a class="header-nav-left"></a>
+
+        <h1 class="header-nav-word">
+            杀手开杀
+        </h1>
+
+        <a class="header-nav-right" onclick="Close()"></a>
+    </nav>
+    <div class="header-in-box">
+        <p class="header-in-word">
+            天黑请闭眼，杀手睁眼
+        </p>
+        <div class="header-in-blank">
+            <!-- 空 -->
+        </div>
+        <div class="header-in-picture">
+            <audio class="header-in-music" controls="controls" autoplay="autoplay" src="../财富自由.mp3">
+
+            </audio>
+        </div>
+    </div>
+    <div class="header-bottom-box">
+        <p class="header-bottom-arrow">
+        </p>
+        <p class="header-bottom-word">
+            选择一位，干掉他！
+        </p>
+    </div>
+</header>
+<main>
+    <!-- <div class="main-square-box">
+        <p class="main-square-identity">
+            水民
+        </p>
+        <p class="main-square-number">
+            1号
+        </p>
+    </div> -->
+</main>
+<footer>
+    <a class="footer-choice-jump">就是它别跑</a>
+</footer>
+<script src="http://libs.baidu.com/jquery/1.10.2/jquery.min.js"></script>
+<script src="6.js"></script>
+</body>
+
+</html>

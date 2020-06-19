@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>翻牌</title>
+    <script src="http://libs.baidu.com/jquery/1.10.2/jquery.min.js"></script>
+    <style>
+        html {
+            font-size: 625%;
+
+        }
+        body,
+        p {
+            margin: 0;
+        }
+        body {
+            background-color: #29bde0;
+        }
+        header {
+            width: 100%;
+            border-bottom: 0.01rem solid #74d4eb;
+            position: fixed;
+            top: 0;
+        }
+        header .header-top-box {
+            width: 90%;
+            margin-left: auto;
+            margin-right: auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header .header-top-box .header-left-back {
+            display: block;
+            padding: 0.07rem;
+            border-left: 0.03rem solid #fff;
+            border-bottom: 0.03rem solid #fff;
+            transform: rotate(45deg);
+            cursor: pointer;
+        }
+        header .header-top-box .header-in-title {
+            font-size: 0.17rem;
+            font-weight: 700;
+            color: #fff;
+        }
+        header .header-top-box .header-right-help {
+            display: block;
+            padding: 0.1rem;
+            background-image: url(img/task3-1.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            cursor: pointer;
+        }
+        main {
+            margin-top: 1rem;
+            display: flex;
+            justify-content: center;
+        }
+        main #mainBoxOne {
+            width: 85%;
+            height: 4rem;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background-color: #ffedc5;
+            border: 0.02rem solid #fff;
+        }
+        main #mainBoxOne #mainTopNumber {
+            position: absolute;
+            top: -0.185rem;
+            width: 0.37rem;
+            height: 0.37rem;
+            border-radius: 50%;
+            border: 0.03rem solid #ffedc5;
+            font-size: 0.2rem;
+            font-weight: 700;
+            color: #f56b81;
+            background-color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        main #mainBoxOne #pictureOne {
+            display: block;
+            padding: 1rem;
+            background-image: url(img/task3-2.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        main #mainBoxOne #picturecCivilian {
+            display: none;
+            margin-bottom: 0.5rem;
+            padding: 0.5rem;
+            background-image: url(img/task3-3.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        main #mainBoxOne #picturecKiller {
+            display: none;
+            margin-bottom: 0.5rem;
+            padding: 0.5rem;
+            background-image: url(img/task3-4.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        main #mainBoxOne #identity {
+            font-size: 0.27rem;
+            font-weight: 700;
+            color: #29bde0;
+        }
+        footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            font-size: 0;
+            display: flex;
+            justify-content: center;
+        }
+        footer .footer-button-start {
+            margin-bottom: 0.5rem;
+            width: 87%;
+            line-height: 0.44rem;
+            font-size: 0.2rem;
+            font-weight: 700;
+            color: #fff;
+            background-color: #fab344;
+            border: 0;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <div class="header-top-box">
+        <a class="header-left-back" onclick="BackOff()"></a>
+        <h1 class="header-in-title">查看身份</h1>
+        <a class="header-right-help" onclick="Close()"></a>
+    </div>
+</header>
+<main>
+    <div id="mainBoxOne">
+        <p id="mainTopNumber">
+            1
+        </p>
+        <p id="pictureOne">
+        </p>
+        <p id="picturecCivilian">
+
+        </p>
+        <p id="picturecKiller">
+
+        </p>
+        <p id="identity">
+
+        </p>
+    </div>
+</main>
+<footer>
+    <button class="footer-button-start" id="footerText" onclick="btn()">
+        看看1号是谁
+    </button>
+</footer>
+<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.js"></script>
+<script src="3.js"></script>
+</body>
+</html>

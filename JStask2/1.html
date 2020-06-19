@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>任务二</title>
+    <style>
+        html {
+            margin: 0 auto;
+            font-size: 62.5%;
+            max-width: 780px;
+            min-width: 320px;
+        }
+        html * {
+            padding: 0;
+            margin: 0;
+        }
+        body {
+            background-color: #f0f0f0;
+        }
+        body header {
+            background-color: #29bde0;
+            width: 100%;
+        }
+        body header nav a {
+            display: block;
+            padding: 2rem;
+            background-image: url(img/task2-3.png);
+            background-repeat: no-repeat;
+            background-position: 1rem;
+        }
+        body main {
+            margin: 1.5rem;
+        }
+        body main .main-top-title {
+            display: block;
+            position: relative;
+            width: 100%;
+            line-height: 6.5rem;
+            text-align: center;
+            font-size: 1.75rem;
+            font-weight: 700;
+            text-decoration: none;
+            border: 0.1rem solid #999;
+            color: #999;
+            background-color: #fff;
+        }
+        body main .main-top-title .main-title-picture {
+            position: absolute;
+            right: 1rem;
+            top: 33%;
+        }
+        body main .main-main-box {
+            width: 100%;
+            margin-top: 1.5rem;
+            background-color: #fff;
+            border: 0.1rem solid #999;
+        }
+        body main .main-main-box h2 {
+            width: 100%;
+            text-align: center;
+            line-height: 4.6rem;
+            font-size: 1.9rem;
+            font-weight: 700;
+            color: #fbb435;
+            border-bottom: 0.1rem solid #fbb435;
+        }
+        body main .main-main-box .main-game-version {
+            display: block;
+            margin: 1.5rem 3rem;
+            line-height: 6.8rem;
+            text-align: center;
+            text-decoration: none;
+            color: #fff;
+            font-size: 1.6rem;
+            font-weight: 700;
+            background-color: #29bde0;
+        }
+        body main .main-main-box .main-word {
+            font-size: 1.22rem;
+            font-weight: 700;
+            text-align: center;
+            color: #999;
+        }
+        body main .main-main-box .main-in-box {
+            position: relative;
+        }
+        body main .main-main-box .main-in-box .main-in-arrow {
+            position: absolute;
+            right: 0;
+            top: 30%;
+            padding: 1.5rem;
+            background-image: url(img/task2-2.png);
+            background-repeat: no-repeat;
+            background-position-x: 1rem;
+        }
+        body main .main-bottom-box {
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: center;
+            align-content: center;
+        }
+        body main .main-bottom-round {
+            margin: 0.5rem;
+            width: 0.5rem;
+            height: 0.5rem;
+            padding: 0.5rem;
+            background-color: #f0f0f0;
+            border-radius: 50%;
+        }
+        body main .main-bottom-round:hover {
+            background-color: #29bde0;
+        }
+
+    </style>
+</head>
+<body>
+<header>
+    <nav>
+        <a href=""></a>
+    </nav>
+</header>
+<main>
+    <a class="main-top-title" onclick="Jump()">
+        上次游戏：捉鬼猜词版
+        <img class="main-title-picture" src="img/task2-1.png" alt="右">
+    </a>
+    <div class="main-main-box">
+        <h2>
+            捉鬼游戏
+        </h2>
+        <a class="main-game-version" href="2.html">
+            简化版
+        </a>
+        <p class="main-word">
+            有1133个用户正在玩此款游戏
+        </p>
+        <div class="main-in-box">
+            <a class="main-game-version" onclick="Jump()">
+                猜词版
+            </a>
+            <a class="main-in-arrow" onclick="Jump()"></a>
+        </div>
+        <p class="main-word">
+            有1133个用户正在玩此款游戏
+        </p>
+        <a class="main-game-version" onclick="Jump()">
+            白痴版
+        </a>
+        <p class="main-word">
+            有1133个用户正在玩此款游戏
+        </p>
+        <div class="main-bottom-box">
+            <p class="main-bottom-round">
+            </p>
+            <p class="main-bottom-round">
+            </p>
+            <p class="main-bottom-round">
+            </p>
+            <p class="main-bottom-round">
+            </p>
+        </div>
+    </div>
+</main>
+
+
+
+<script src="1.js"></script>
+</body>
+</html>

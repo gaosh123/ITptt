@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>结果页</title>
+    <style>
+        html {
+            font-size: 62.5%;
+        }
+        html * {
+            padding: 0;
+            margin: 0;
+        }
+        body header {
+            background-color: #29bde0;
+            position: fixed;
+            top: 0;
+            width: 100%;
+        }
+        body header .header-top-box {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 0.1rem solid #74b4eb;
+        }
+        body header .header-top-box .header-top-left {
+            padding: 2rem;
+            background-image: url(img/task7-7.png);
+            background-repeat: no-repeat;
+            background-position: 1rem;
+        }
+        body header .header-top-box .header-top-word {
+            font-size: 1.7rem;
+            font-weight: 700;
+            color: #fff;
+        }
+        body header .header-top-box .header-top-right {
+            padding: 2rem;
+            background-image: url(img/task7-8.png);
+            background-position: 1rem;
+            background-repeat: no-repeat;
+        }
+        body main {
+            margin-top: 4rem;
+            margin-bottom: 8rem;
+            background-color: #29bde0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        body main .main-result-picture {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #fff;
+            text-align: center;
+            width: 19rem;
+            padding-top: 7.5rem;
+            margin-bottom: 3rem;
+            background-image: url(img/task7-6.png);
+            background-repeat: no-repeat;
+            background-size: 100%;
+        }
+        body main .mian-result-summary {
+            padding: 0 3.9rem 3rem 3.9rem;
+            font-size: 1.65rem;
+            font-weight: 700;
+            color: #ffc865;
+        }
+        body main .main-result-detailed {
+            align-self: flex-start;
+            padding-left: 3.9rem;
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: #fff;
+            margin: 0.5rem 0;
+        }
+        body main .main-log-box {
+            width: 100%;
+            background-color: #fff;
+            border-bottom: 0.1rem solid #ddd;
+        }
+        body main .package {
+            width: 100%;
+        }
+        body main .package .main-log-topbox {
+            display: flex;
+            justify-content: space-between;
+            padding-left: 3.9rem;
+            padding-right: 3.9rem;
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+        }
+        body main .package .main-log-day {
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+        body main .package .main-log-time {
+            padding-top: 0.5rem;
+            color: #c7c7c7;
+            font-size: 1rem;
+            font-weight: 700;
+        }
+        body main .package .main-log-summary {
+            padding: 0.5rem 3.9rem 0.5rem 3.9rem;
+            color: #a6a6a6;
+            font-size: 1.3rem;
+            font-weight: 700;
+        }
+        body footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            height: 8rem;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: rgba(153, 223, 240, 0.5);
+        }
+        body footer .footer-recur {
+            display: block;
+            line-height: 5rem;
+            text-align: center;
+            width: 13rem;
+            border-radius: 1rem;
+            font-size: 2rem;
+            font-weight: 700;
+            background-color: #f66f6f;
+            color: #fff;
+            text-decoration: none;
+        }
+        body footer .footer-share {
+            display: block;
+            line-height: 5rem;
+            text-align: center;
+            width: 13rem;
+            border-radius: 1rem;
+            font-size: 2rem;
+            font-weight: 700;
+            background-color: #fbb435;
+            color: #fff;
+            text-decoration: none;
+        }
+
+    </style>
+</head>
+
+<body>
+<header>
+    <nav class="header-top-box">
+        <a class="header-top-left" onclick="Close()"></a>
+        <h1 class="header-top-word">游戏结果</h1>
+        <a class="header-top-right"></a>
+    </nav>
+</header>
+<main>
+    <p class="main-result-picture">
+
+    </p>
+    <p class="main-result-detailed">
+        本次游戏共计用时0小时25分分钟
+    </p>
+    <p class="main-result-detailed">
+
+    </p>
+    <p class="main-result-detailed">
+        杀手词汇:爱新觉罗
+    </p>
+    <p class="main-result-detailed">
+        平民词汇:努尔哈赤
+    </p>
+    <div class="package">
+        <div class="main-log-box">
+            <div class="main-log-topbox">
+                <p class="main-log-day">
+
+                </p>
+                <p>
+
+                </p>
+                <p class="main-log-time">
+                    0小时07分
+                </p>
+            </div>
+            <p class="main-log-summary add">
+
+            </p>
+            <p class="main-log-summary add">
+
+            </p>
+        </div>
+    </div>
+</main>
+<footer>
+    <a class="footer-recur" onclick="Close()">再来一局</a>
+    <a class="footer-share">上传并分享</a>
+</footer>
+<script src="http://libs.baidu.com/jquery/1.10.2/jquery.min.js"></script>
+<script src="7.js"></script>
+</body>
+
+</html>

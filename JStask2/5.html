@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>法官日记</title>
+
+    <style>
+        html {
+            font-size: 625%;
+        }
+        body,
+        p {
+            margin: 0;
+        }
+        body {
+            background-color: #f0f0f0;
+        }
+        header {
+            width: 100%;
+            position: fixed;
+            top: 0;
+            z-index: 99;
+            background-color: #29bde0;
+        }
+        header .header-top-box {
+            width: 90%;
+            margin-left: auto;
+            margin-right: auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header .header-top-box .header-left-back {
+            display: block;
+            padding: 0.07rem;
+            border-left: 0.03rem solid #fff;
+            border-bottom: 0.03rem solid #fff;
+            transform: rotate(45deg);
+            cursor: pointer;
+        }
+        header .header-top-box .header-in-title {
+            font-size: 0.17rem;
+            font-weight: 700;
+            color: #fff;
+        }
+        header .header-top-box .header-right-help {
+            display: block;
+            padding: 0.1rem;
+            background-image: url(img/task3-1.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            cursor: pointer;
+        }
+        main {
+            width: 95%;
+            margin: auto;
+            margin-top: 0.6rem;
+            margin-bottom: 0.75rem;
+            overflow: hidden;
+        }
+        main .mainToDayBox {
+            width: 100%;
+            background-color: #fff;
+            border: 0.01rem solid #c9c9c9;
+            margin-top: 0.1rem;
+            margin-bottom: 0.1rem;
+        }
+        main .mainToDayBox .mainToDayNumber {
+            line-height: 0.43rem;
+            text-align: center;
+            font-size: 0.15rem;
+            font-weight: 700;
+            color: #29bde0;
+            border: 0.01rem solid #c9c9c9;
+            border-left: 0;
+            border-right: 0;
+        }
+        main .mainToDayBox .mainOperate {
+            border: 0.01rem solid #c9c9c9;
+            margin-left: 0.3rem;
+        }
+        main .mainToDayBox .mainOperate .resultFontSize {
+            width: 100%;
+            margin: 0.05rem 0;
+            text-align: center;
+            font-size: 0.16rem;
+            font-weight: 700;
+            color: #b40606;
+        }
+        main .mainToDayBox .mainOperate .buttonBox {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            margin-top: 0.1rem;
+            margin-bottom: 0.1rem;
+        }
+        main .mainToDayBox .mainOperate .buttonBox .buttonBackgroundColor {
+            background-color: #83b09a!important;
+        }
+        main .mainToDayBox .mainOperate .buttonBox .buttonBorderColor {
+            border-right-color: #83b09a!important;
+        }
+        main .mainToDayBox .mainOperate .buttonBox .pictureMoon {
+            position: absolute;
+            left: -0.16rem;
+            padding: 0.16rem;
+            background-color: #fff;
+            background-image: url(img/task4-1.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        main .mainToDayBox .mainOperate .buttonBox .pictureSun {
+            position: absolute;
+            left: -0.16rem;
+            padding: 0.16rem;
+            background-color: #fff;
+            background-image: url(img/task4-2.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        main .mainToDayBox .mainOperate .buttonBox .mainTriangle {
+            width: 0;
+            height: 0;
+            border: 0.19rem solid #29bde0;
+            border-top: 0.19rem solid #fff;
+            border-left: 0.19rem solid #fff;
+            border-bottom: 0.19rem solid #fff;
+        }
+        main .mainToDayBox .mainOperate .buttonBox .mainButton {
+            cursor: pointer;
+            height: 0.38rem;
+            width: 80%;
+            outline: none;
+            border: none;
+            font-size: 0.15rem;
+            font-weight: 700;
+            color: #fff;
+            background-color: #29bde0;
+        }
+        footer {
+            width: 100%;
+            height: 0.7rem;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            position: fixed;
+            bottom: 0;
+            background-color: #29bde0;
+        }
+        footer .footerEnd {
+            width: 40%;
+            height: 0.5rem;
+            border-radius: 0.1rem;
+            border: none;
+            outline: none;
+            font-size: 0.17rem;
+            font-weight: 700;
+            color: #fff;
+            background-color: red;
+            cursor: pointer;
+        }
+        footer .footerLog {
+            width: 40%;
+            height: 0.5rem;
+            border-radius: 0.1rem;
+            border: none;
+            outline: none;
+            font-size: 0.17rem;
+            font-weight: 700;
+            color: #fff;
+            background-color: orange;
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+
+<body>
+<header>
+    <div class="header-top-box">
+        <a class="header-left-back" href="../html/task3-2.html"></a>
+        <h1 class="header-in-title">法官日记</h1>
+        <a class="header-right-help" onclick="Close()"></a>
+    </div>
+</header>
+<main>
+
+    <div class="mainToDayBox">
+        <div class="mainToDayNumber">
+            第1天
+        </div>
+        <div class="mainOperate">
+            <div class="buttonBox add">
+                <div class="pictureMoon">
+                </div>
+                <div class="mainTriangle">
+                </div>
+                <button class="mainButton">杀手开杀</button>
+            </div>
+            <div class="buttonBox">
+                <div class="pictureSun">
+                </div>
+                <div class="mainTriangle">
+                </div>
+                <button class="mainButton">亡者留言</button>
+            </div>
+            <div class="buttonBox">
+                <div class="mainTriangle">
+                </div>
+                <button class="mainButton">依次发言</button>
+            </div>
+            <div class="buttonBox add">
+                <div class="mainTriangle">
+                </div>
+                <button class="mainButton">全民投票</button>
+            </div>
+        </div>
+    </div>
+</main>
+<footer>
+    <button class="footerEnd" onclick="Close()">
+        结束游戏
+    </button>
+    <button class="footerLog">
+        游戏日志
+    </button>
+</footer>
+<script src="http://libs.baidu.com/jquery/1.10.2/jquery.min.js"></script>
+<script src="5.js"></script>
+</body>
+
+</html>
